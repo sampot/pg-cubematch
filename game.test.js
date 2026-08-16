@@ -1,0 +1,3 @@
+import {describe,it,expect} from "vitest";
+import {createDeck,newGame,flip,collapse,score} from "./game.js";
+describe("cube pet match",()=>{it("creates exact pairs",()=>{const d=createDeck(6,()=>.4);expect(d).toHaveLength(12);expect(new Set(d).size).toBe(6)});it("matches equal pets",()=>{let s={...newGame(1),cards:[0,0]};s=flip(s,0).state;s=flip(s,1).state;expect(s.over).toBe(true)});it("collapses mismatches",()=>{let s={...newGame(2),cards:[0,1,0,1]};s=flip(s,0).state;s=flip(s,1).state;expect(collapse(s).open).toEqual([])});it("rewards fewer moves",()=>expect(score({...newGame(1),over:true,moves:1})).toBe(990));});

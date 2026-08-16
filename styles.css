@@ -1,0 +1,10 @@
+:root{--bg:#fdf4ff;--fg:#3b0764;--accent:#e879f9;--muted:color-mix(in oklab,var(--fg) 55%,transparent)}
+*{box-sizing:border-box}html,body{margin:0;padding:0}body{min-height:100vh;background:radial-gradient(ellipse at top,color-mix(in oklab,var(--accent) 18%,var(--bg)),var(--bg));color:var(--fg);font-family:system-ui,"PingFang TC","Microsoft JhengHei",sans-serif}
+main{max-width:40rem;margin:0 auto;padding:1rem .85rem 2rem}
+h1{margin:0;font-size:1.5rem}.tag{margin:.25rem 0 0;color:var(--muted);font-size:.9rem}
+.toolbar{display:flex;flex-wrap:wrap;gap:.5rem;align-items:center;margin:1rem 0}
+button,.btn{min-height:44px;padding:.55rem 1rem;border-radius:12px;border:1px solid color-mix(in oklab,var(--fg) 20%,transparent);background:color-mix(in oklab,var(--fg) 8%,var(--bg));color:var(--fg);font:inherit;cursor:pointer;touch-action:manipulation}
+button.primary{background:var(--accent);border-color:var(--accent);color:#111;font-weight:700}
+.status{margin:0;color:var(--muted)}.panel{background:color-mix(in oklab,var(--fg) 6%,var(--bg));border:1px solid color-mix(in oklab,var(--fg) 12%,transparent);border-radius:14px;padding:.75rem}
+.grid{display:grid;gap:.35rem}.help{margin-top:1rem;color:var(--muted);font-size:.9rem;line-height:1.5}
+@media(min-width:560px){main{padding-top:1.5rem}h1{font-size:1.85rem}}
