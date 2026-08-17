@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "rev": "458f75a",
+  "files": [
+    "app.js",
+    "assets/animal-bunny.png",
+    "assets/animal-cat.png",
+    "assets/animal-dog.png",
+    "assets/animal-fox.png",
+    "assets/animal-panda.png",
+    "assets/animal-pig.png",
+    "functions.js",
+    "game.js",
+    "index.html",
+    "styles.css"
+  ]
+}
